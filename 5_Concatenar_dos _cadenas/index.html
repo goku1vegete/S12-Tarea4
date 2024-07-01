@@ -1,0 +1,20 @@
+<script>
+    //5. Concatenar dos cadenas
+    function concatenarCadenas(cadena1, cadena2) {
+    // Usando el operador +
+    var resultado1 = cadena1 + cadena2;
+
+    // Usando el método concat()
+    var resultado2 = cadena1.concat(cadena2);
+
+    return [resultado1, resultado2];
+}
+
+// Ejemplo de uso
+var cadena1 = "Hola, ";
+var cadena2 = "mundo!";
+var resultado = concatenarCadenas(cadena1, cadena2);
+console.log("Resultado usando operador +:", resultado[0]); // "Hola, mundo!"
+console.log("Resultado usando método concat():", resultado[1]); // "Hola, mundo!"
+
+</script>

@@ -1,0 +1,23 @@
+<script>
+    //3. Primo
+    function esNumeroPrimo(numero) {
+    if (numero <= 1) {
+        return false;
+    }
+
+    // Iteramos desde 2 hasta la raíz cuadrada de numero
+    for (var i = 2; i <= Math.sqrt(numero); i++) {
+        if (numero % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+// Ejemplo de uso
+var numPrimo = 13;
+var esPrimo = esNumeroPrimo(numPrimo);
+console.log(numPrimo + " es número primo:", esPrimo); // true
+
+</script>

@@ -1,0 +1,15 @@
+<script>
+    //12. Insertar arreglo
+    function insertarEnArreglo(arreglo, elemento, posicion) {
+    arreglo.splice(posicion, 0, elemento);
+    return arreglo;
+}
+
+// Ejemplo de uso
+var arreglo = ["manzana", "pera", "uva", "plátano"];
+var elemento = "naranja";
+var posicion = 2;
+var arregloModificado = insertarEnArreglo(arreglo, elemento, posicion);
+console.log("Arreglo después de la inserción:", arregloModificado); // ["manzana", "pera", "naranja", "uva", "plátano"]
+
+</script>

@@ -1,0 +1,14 @@
+<script>
+  //20. Base 2 a base 16
+  function binarioAHexadecimal(binario) {
+    var decimal = parseInt(binario, 2);
+    var hexadecimal = decimal.toString(16).toUpperCase();
+    return hexadecimal;
+}
+
+// Ejemplo de uso
+var numeroBinario = "1011";
+var hexadecimalResultado = binarioAHexadecimal(numeroBinario);
+console.log("Número binario", numeroBinario, "en hexadecimal:", hexadecimalResultado); // "B"
+
+</script>

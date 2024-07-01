@@ -1,0 +1,22 @@
+<script>
+    //11. Buscar arreglo
+    function buscarEnArreglo(arreglo, elemento) {
+    // Usando indexOf()
+    var indice = arreglo.indexOf(elemento);
+    var encontrado1 = indice !== -1;
+
+    // Usando find()
+    var encontrado2 = arreglo.find(el => el === elemento) !== undefined;
+
+    return [encontrado1, encontrado2, indice];
+}
+
+// Ejemplo de uso
+var arreglo = ["manzana", "pera", "uva", "plátano"];
+var elemento = "uva";
+var resultado = buscarEnArreglo(arreglo, elemento);
+console.log("¿El elemento está presente? (indexOf):", resultado[0]); // true
+console.log("¿El elemento está presente? (find):", resultado[1]); // true
+console.log("Índice del elemento:", resultado[2]); // 2
+
+</script>

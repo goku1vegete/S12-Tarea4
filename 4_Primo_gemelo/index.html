@@ -1,0 +1,21 @@
+<script>
+    //4. Primo gemelo
+    function encontrarPrimosGemelos(hasta) {
+    var primosGemelos = [];
+
+    for (var i = 2; i <= hasta - 2; i++) {
+        if (esNumeroPrimo(i) && esNumeroPrimo(i + 2)) {
+            primosGemelos.push([i, i + 2]);
+        }
+    }
+
+    return primosGemelos;
+}
+
+// Ejemplo de uso
+var limite = 50;
+var paresGemelos = encontrarPrimosGemelos(limite);
+console.log("Pares de primos gemelos hasta", limite + ":");
+console.log(paresGemelos);
+
+</script>

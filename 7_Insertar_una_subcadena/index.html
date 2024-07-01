@@ -1,0 +1,17 @@
+<script>
+    //7. Insertar una subcadena
+    function insertarSubcadena(cadena, subcadena, posicion) {
+    var parte1 = cadena.slice(0, posicion);
+    var parte2 = cadena.slice(posicion);
+    var resultado = parte1 + subcadena + parte2;
+    return resultado;
+}
+
+// Ejemplo de uso
+var cadena = "Hola mundo!";
+var subcadena = "hermoso ";
+var posicion = 5;
+var resultado = insertarSubcadena(cadena, subcadena, posicion);
+console.log("Resultado de insertar:", resultado); // "Hola hermoso mundo!"
+
+</script>

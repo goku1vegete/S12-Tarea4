@@ -1,0 +1,14 @@
+<script>
+  //19. Base 2 a base 8
+  function binarioAOctal(binario) {
+    var decimal = parseInt(binario, 2);
+    var octal = decimal.toString(8);
+    return octal;
+}
+
+// Ejemplo de uso
+var numeroBinario = "1011";
+var octalResultado = binarioAOctal(numeroBinario);
+console.log("Número binario", numeroBinario, "en octal:", octalResultado); // "13"
+
+</script>

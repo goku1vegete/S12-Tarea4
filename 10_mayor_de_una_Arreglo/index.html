@@ -1,0 +1,23 @@
+<script>
+    //10. Mayor de un arreglo
+    function mayorArreglo(arreglo) {
+    if (arreglo.length === 0) {
+        return undefined;
+    }
+
+    var mayor = arreglo[0];
+    for (var i = 1; i < arreglo.length; i++) {
+        if (arreglo[i] > mayor) {
+            mayor = arreglo[i];
+        }
+    }
+
+    return mayor;
+}
+
+// Ejemplo de uso
+var arreglo = [5, 12, 9, 3, 21];
+var mayor = mayorArreglo(arreglo);
+console.log("El mayor elemento del arreglo:", mayor); // 21
+
+</script>

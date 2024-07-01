@@ -1,0 +1,23 @@
+<script>
+    //6. Buscar una subcadena
+    function buscarSubcadena(cadena, subcadena) {
+    // Usando indexOf()
+    var indice = cadena.indexOf(subcadena);
+    var encontrado1 = indice !== -1;
+
+    // Usando includes()
+    var encontrado2 = cadena.includes(subcadena);
+
+    return [encontrado1, encontrado2, indice];
+}
+
+// Ejemplo de uso
+var cadena = "Hola mundo";
+var subcadena = "mundo";
+var resultado = buscarSubcadena(cadena, subcadena);
+console.log("¿La subcadena está presente? (indexOf):", resultado[0]); // true
+console.log("¿La subcadena está presente? (includes):", resultado[1]); // true
+console.log("Índice de la subcadena:", resultado[2]); // 5
+
+
+</script>

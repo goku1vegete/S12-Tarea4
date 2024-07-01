@@ -1,0 +1,24 @@
+<script>
+  // 1. Divisores de un número
+  function obtenerDivisores(numero) {
+    // Creamos un array para almacenar los divisores
+    var divisores = [];
+
+    // Iteramos desde 1 hasta el número dado
+    for (var i = 1; i <= numero; i++) {
+        // Si i es divisor de numero, lo agregamos al array
+        if (numero % i === 0) {
+            divisores.push(i);
+        }
+    }
+
+    // Retornamos el array con los divisores
+    return divisores;
+}
+
+// Ejemplo de uso
+var numero = 24;
+var resultado = obtenerDivisores(numero);
+console.log("Los divisores de", numero, "son:", resultado);
+
+</script>

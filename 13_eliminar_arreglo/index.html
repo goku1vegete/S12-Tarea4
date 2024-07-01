@@ -1,0 +1,14 @@
+<script>
+    //13. Eliminar arreglo
+    function eliminarEnArreglo(arreglo, indice) {
+    arreglo.splice(indice, 1);
+    return arreglo;
+}
+
+// Ejemplo de uso
+var arreglo = ["manzana", "pera", "uva", "plátano"];
+var indice = 1;
+var arregloModificado = eliminarEnArreglo(arreglo, indice);
+console.log("Arreglo después de la eliminación:", arregloModificado); // ["manzana", "uva", "plátano"]
+
+</script>
